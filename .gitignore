@@ -1,7 +1,5 @@
-.DS_Store
 node_modules
 .tmp
 .sass-cache
-images/**
-slides/**
-builds/sassEssentials/css/style.css
+builds/development/images/**
+builds/development/css/style.css
