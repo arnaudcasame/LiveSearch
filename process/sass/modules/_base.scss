@@ -35,7 +35,7 @@ h6 {
     font-family: $font-main;
     font-weight: normal;
     color: $dkgray-accent1;
-    text-shadow: -1px -1px rgba(255, 255, 255, 1);
+    text-shadow: -1px -1px rgba(255, 255, 255, .5);
 }
 
 a {
@@ -71,9 +71,10 @@ h3 {
 
 p {
     line-height: 1.3rem;
-    color: $dkgray-accent2;
+    color: $color-main;
+    font-weight: 300;
     margin-bottom: 10px;
-    font-family: $font-main;
+    font-family: $font-highlight;
 }
 
 a.small {
