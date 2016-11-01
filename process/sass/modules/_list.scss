@@ -59,3 +59,25 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+.customer.ng-move,
+.customer.ng-enter,
+.customer.ng-leave {
+  transition: all linear 0.5s;
+}
+
+.customer.ng-leave.ng-leave-active,
+.customer.ng-move,
+.customer.ng-enter {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.customer.ng-leave,
+.customer.ng-move.ng-move-active,
+.customer.ng-enter.ng-enter-active {
+  opacity: 1;
+  max-height: 80px;
+  overflow: hidden;
+}
