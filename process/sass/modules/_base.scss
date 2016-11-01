@@ -2,10 +2,8 @@
 
 .cf:before,
 .cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .cf:after {
@@ -13,71 +11,64 @@
 }
 
 html {
-    background: $gray-base;
-    background-image: url(mozaic.png), linear-gradient(-180deg, rgba(255, 255, 255, .6) 0%, rgba(0, 0, 0, .6) 100%);
-    min-height: 100%;
-    height: auto;
+  background-color: #023E54; 
+  background-image: url(images/fallback-gradient.png); 
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#023E54), to(#10AAC0));
+  background-image: -webkit-linear-gradient(top, #023E54, #10AAC0); 
+  background-image: -moz-linear-gradient(top, #023E54, #10AAC0);
+  background-image: -o-linear-gradient(top, #023E54, #10AAC0);
+  min-height: 100%;
+  height: auto;
 }
 
-body {
-    font-family: $font-main;
-    font-size: 1rem;
-    line-height: 160%;
-    *zoom: 1;
+body  {
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  line-height: 160%;
+  *zoom: 1;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $font-main;
-    font-weight: normal;
-    color: $dkgray-accent1;
-    text-shadow: -1px -1px rgba(255, 255, 255, .5);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+  font-weight: normal;
+  color: #475b62;
+  text-shadow: 1px 1px rgba(255,255,255, 1);
 }
 
 a {
-    color: $dkgray-accent4;
-    font-weight: 600;
-    font-family: $font-highlight;
+  color: #145266;
+  font-family: 'Bree Serif', serif;
 }
 
-a:hover {
-    color: $gray-base;
+h1{
+  color: #145266;
+  font-size: 2.2rem;
+  line-height: 100%;
+  margin-bottom: 10px;
 }
 
-h1 {
-    color: $dkgray-accent1;
-    font-size: 2.2rem;
-    line-height: 100%;
-    margin-bottom: 10px;
+h2{ 
+  font-size: 1.5rem;
+  line-height: 90%;
+  color: #c61c6f;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 3px;
-    line-height: 90%;
-    color: $dkgray-accent4;
-}
-
-h3 {
-    margin-top: 0;
-    color: $dkgray-accent3;
-    line-height: 110%;
-    margin-bottom: 5px;
+h3{ 
+  margin-top: 0;
+  color: #bd3613;
+  line-height: 110%;
+  margin-bottom: 5px;
 }
 
 p {
-    line-height: 1.3rem;
-    color: $color-main;
-    font-weight: 300;
-    margin-bottom: 10px;
-    font-family: $font-highlight;
+  line-height: 1.3rem;
+  color: #475B62;
+  margin-bottom: 10px;
+  font-family: 'Merriweather';
 }
 
 a.small {
-    line-height: 100%;
-    font-size: .9rem;
+  line-height: 100%;
+  font-size: .9rem;
 }

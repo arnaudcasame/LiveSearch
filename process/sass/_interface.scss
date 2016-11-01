@@ -11,24 +11,23 @@
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    background: $dkgray-accent2;
-    color: #fff;
+    background: #C61C6F;
+    color: #FCF4DC;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
 }
 
 .btn .btn-left {
-    float: left;
+  float: left;
 }
 
 .btn .btn-right {
-    float: right;
+  float: right;
 }
 
 .btn:hover {
-    background: #fff;
-    color: $dkgray-accent2;
+    background: #09576D;
 }
