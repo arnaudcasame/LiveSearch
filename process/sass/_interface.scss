@@ -11,8 +11,8 @@
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    background: gray;
-    color: #FCF4DC;
+    background: $dkgray-accent2;
+    color: #fff;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -30,5 +30,5 @@
 
 .btn:hover {
     background: #fff;
-    color: gray;
+    color: $dkgray-accent2;
 }
