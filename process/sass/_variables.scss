@@ -1,23 +1,19 @@
-$offwhite:    #EEE8D6;
-$darkblue:    #022933;
-$yellow:      #FFBA00;
-$blue:        #0076A3;
-$green:       #548C27;
-$orange:      #F39856;
-$red:         #D14348;
-$purple:      #6D73C2;
+$gray-base      : #CCCCCC;
+$dkgray-accent1 : #a0a0a0;
+$dkgray-accent2 : #797979;
+$dkgray-accent3 : #696969;
+$dkgray-accent4 : #5f5f5f;
 
 
-$color-main: $darkblue;
-$color-backgrounds: $offwhite;
-$color-headlines: $red;
+$color-main: $dkgray-accent4;
+$color-backgrounds: $dkgray-accent3;
+$color-headlines: $dkgray-accent2;
 
 
-$font-main: Merriweather, Helvetica, sans-serif;
-$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+$font-main: 'Open Sans', sans-serif;
+$font-highlight: 'Source Sans Pro', sans-serif;
 
 //breakpoints
-
 $small:		450px;
 $medium:	760px;
 $large:		1200px;
