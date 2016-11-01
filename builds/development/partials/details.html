@@ -1,0 +1,15 @@
+<section class="customerinfo">
+    <div class="customer cf" ng-model='customers'>
+        <a href="#/details/{{prevItem}}" class='btn btn-left'>&lt;</a>
+        <a href="#/details/{{nextItem}}" class='btn btn-right'>&gt;</a>
+        <h1>{{customers[whichItem].name}}</h1>
+        <div class="info">
+            <h3>{{customers[whichItem].reknown}}</h3>
+            <img ng-src='images/{{customers[whichItem].shortname}}_tn.jpg' alt="Photo of {{customers[whichItem].name}}">
+            <p class="bio">
+                {{customers[whichItem].bio}}
+            </p>
+        </div>
+    </div>
+    <a href="index.html">&laquo; Back to search</a>
+</section>

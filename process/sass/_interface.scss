@@ -1,0 +1,34 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: gray;
+    color: #FCF4DC;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn .btn-left {
+    float: left;
+}
+
+.btn .btn-right {
+    float: right;
+}
+
+.btn:hover {
+    background: #fff;
+    color: gray;
+}
