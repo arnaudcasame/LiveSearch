@@ -1,15 +1,59 @@
-<section class="customerinfo">
-    <div class="customer cf" ng-model='customers'>
-        <a href="#/details/{{prevItem}}" class='btn btn-left'>&lt;</a>
-        <a href="#/details/{{nextItem}}" class='btn btn-right'>&gt;</a>
-        <h1>{{customers[whichItem].name}}</h1>
-        <div class="info">
-            <h3>{{customers[whichItem].reknown}}</h3>
-            <img ng-src='images/{{customers[whichItem].shortname}}_tn.jpg' alt="Photo of {{customers[whichItem].name}}">
-            <p class="bio">
-                {{customers[whichItem].bio}}
-            </p>
+<section class="card details">
+    <a ng-href="#/list">&laquo; retour à la liste</a>
+    <article class="cf">
+        <header class="">
+            <h1 ng-show="!customer.compagnie || customer.compagnie === 'N/A'">{{customer.lastname+' '+customer.firstname}}</h1>
+            <h1 ng-if="customer.compagnie && customer.compagnie !== 'N/A'">{{customer.compagnie}}</h1>
+            <h3 ng-if="customer.compagnie && customer.compagnie !== 'N/A'">{{customer.lastname+' '+customer.firstname}}</h3>
+            <h3>{{customer.cin_nif}}</h3>
+            <h3>{{customer.adresse}}</h3>
+        </header>
+        <div class="pub-card" ng-repeat="item in customer.publications">
+            <div class='img-container'>
+                <img ng-src="{{item.logo}}" alt="logo of {{item.creditor}}">
+            </div>
+            <div class="pub-infos">
+                <h3>{{item.creditor}}</h3>
+                <p>Publiée par {{item.publisher}} le {{item.publishedDate | date: 'd MMM yy'}}</p>
+            </div>
         </div>
-    </div>
-    <a href="index.html">&laquo; Back to search</a>
+
+        <form name="addPubForm" class="less-750-px" ng-show="currentUser.status==='Admin'" novalidate>
+
+
+            <select title='Créancier' class="exact-select" name="creditor" ng-model="pub.creditor" required="true">
+                <option value="Capital Crédit">Capital Crédit</option>
+                <option value="Capital Carte">Capital Carte</option>
+                <option value="BUH MasterCard">BUH MasterCard</option>
+                <option value="BUH">BUH</option>
+                <option value="SOGEFAC">SOGEFAC</option>
+                <option value="Micro Crédit National">Micro Crédit National</option>
+                <option value="Micro Crédit Capital">Micro Crédit Capital</option>
+                <option value="Unicrédit">Unicrédit</option>
+                <option value="Scotiabank">Scotiabank</option>
+                <option value="BNC">BNC</option>
+                <option value="Unicarte">Unicarte</option>
+                <option value="SogeCarte">SogeCarte</option>
+                <option value="SOFIHDES">SOFIHDES</option>
+                <option value="SOGEBEL">SOGEBEL</option>
+                <option value="EDH">EDH</option>
+                <option value="Sogesol">Sogesol</option>
+            </select>
+
+            <input type="text" title="Numero de compte" name="no_compte" ng-model="pub.no_compte" required="true" placeholder="No compte" />
+
+            <input type="text" title="Editeur" name="publisher" ng-model="pub.publisher" required="true" placeholder="Editeur" />
+
+            <input type="text" title="Numero d'edition" name="no_edition" ng-model="pub.no_edition" required="true" placeholder="Edition" />
+
+            <input type="date" title="date de publication" name="publishedDate" ng-model="pub.publishedDate" required="true" />
+
+            <button type="submit" ng-disabled="addPubForm.$invalid" class='btn' ng-hide="actualState" ng-click="addPub(customer.$id, pub)" title='ajouter'> ajouter </button>
+
+
+        </form>
+
+    </article>
+
+    <a ng-href="#/list">&laquo; retour à la liste</a>
 </section>
