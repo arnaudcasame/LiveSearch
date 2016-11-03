@@ -1,19 +1,44 @@
-$gray-base      : #CCCCCC;
-$dkgray-accent1 : #a0a0a0;
-$dkgray-accent2 : #797979;
-$dkgray-accent3 : #696969;
-$dkgray-accent4 : #5f5f5f;
-
-
-$color-main: $dkgray-accent4;
-$color-backgrounds: $dkgray-accent3;
-$color-headlines: $dkgray-accent2;
-
-
-$font-main: 'Open Sans', sans-serif;
-$font-highlight: 'Source Sans Pro', sans-serif;
-
+$offwhite: #EEE8D6;
+$creme: #FDF6E3;
+$light-yellow: #FFDC7D;
+$yellow: #FFBA00;
+$orange: #F39856;
+$dkorange: #E76C5A;
+$red: #D14348;
+$red-blood: #DC322F;
+$red-pink: #FF304F;
+$purple-pink: #C61C6F;
+$purple: #6D73C2;
+$blue: #0076A3;
+$dkblue: #176299;
+$darkblue: #022933;
+$green: #548C27;
+$bluegreen: #023E54;
+$white: #FFFFFF;
+$dkbluegreen: #063642;
+$lightbluegreen: #08D6CF;
+$darkbluegreen: #10AAC0;
+$gray: #5B5A5A;
+$lightgray: #F4F4F4;
+$dkgray: #475B62;
+$greengray: rgba(255, 255, 255, 0.4);
+$light-greengray: rgba(255, 255, 255, 0.2);
+$color-main: $darkblue;
+$color-input: $gray;
+$color-bg-list: $offwhite;
+$color-bg-form: $dkbluegreen;
+$color-bg-input: $greengray;
+$color-bdr-input: $light-greengray;
+$color-headlines: $red-pink;
+$color-invalid: $red;
+$color-links: $lightbluegreen;
+$color-valid: $lightbluegreen;
+$font-main: 'Asap',
+    sans-serif;
+$font-highlight: 'Asap',
+    sans-serif;
 //breakpoints
-$small:		450px;
-$medium:	760px;
-$large:		1200px;
+$small: 450px;
+$medium: 760px;
+$large: 1200px;
+
