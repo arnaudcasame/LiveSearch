@@ -22,53 +22,81 @@ html {
 }
 
 body  {
-  font-family: Merriweather, serif;
-  font-size: 1rem;
-  line-height: 160%;
-  *zoom: 1;
+    margin-top: 80px;
+    font-family: $font-main;
+    font-size: 1rem;
+    line-height: 160%;
+    *zoom: 1;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bree Serif', serif;
-  font-weight: normal;
-  color: #475b62;
-  text-shadow: 1px 1px rgba(255,255,255, 1);
+    font-family: $font-main;
+    font-weight: normal;
+    color: $dkgray;
 }
 
 a {
-  color: #145266;
-  font-family: 'Bree Serif', serif;
+    color: $color-links; //#145266;
+    font-family: $font-main;
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 h1{
-  color: #145266;
-  font-size: 2.2rem;
-  line-height: 100%;
-  margin-bottom: 10px;
+    color: $white;
+    font-size: 1.6rem;
+    line-height: 100%;
+    margin-bottom: 10px;
 }
 
 h2{ 
-  font-size: 1.5rem;
-  line-height: 90%;
-  color: #c61c6f;
+    font-size: 1.2rem;
+    line-height: 90%;
+    color: $color-headlines;
+    font-weight: bold;
+    margin-top: 3px;
 }
 
 h3{ 
-  margin-top: 0;
-  color: #bd3613;
-  line-height: 110%;
-  margin-bottom: 5px;
+    margin-top: 2px;
+    color: $blue;
+    line-height: 110%;
+    margin-bottom: 3px;
 }
 
 p {
-  line-height: 1.3rem;
-  color: #475B62;
-  margin-bottom: 10px;
-  font-family: 'Merriweather';
+    line-height: 1.3rem;
+    color: $white;
+    margin-bottom: 10px;
+    font-family: $font-main;
 }
 
 a.small {
-  line-height: 100%;
-  font-size: .9rem;
+    line-height: 100%;
+    font-size: .9rem;
+}
+
+.card {
+    width: 90%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 40px;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    border-radius: 4px;
+    z-index: 20;
+}
+
+.details{
+    background-color: $offwhite;
+    padding: 2px;
+}
+
+.login, .register{
+    background-color: $dkbluegreen;
 }
