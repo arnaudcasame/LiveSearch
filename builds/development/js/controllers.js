@@ -14,7 +14,10 @@ customerControllers.controller('ListController', ['$scope', '$http', function ($
 customerControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
     $http.get('js/badpayers-export.json').success(function (data) {
         $scope.customers = Object.values(data.badPayers);
+        
         $scope.whichItem = $routeParams.itemId;
+        
+        $scope.customer = $scope.customers[$scope.whichItem];
 
 
         if ($routeParams.itemId > 0) {
