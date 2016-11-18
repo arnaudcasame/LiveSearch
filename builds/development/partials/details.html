@@ -8,13 +8,14 @@
             <h3>{{customer.cin_nif}}</h3>
             <h3>{{customer.adresse}}</h3>
         </header>
-        <div class="pub-card" ng-repeat="item in customer.publications">
+        <div class="pub-card" > 
+<!--            ng-repeat="customer in customer.publications"-->
             <div class='img-container'>
-                <img ng-src="{{item.logo}}" alt="logo of {{item.creditor}}">
+                <img ng-src="{{customer.logo}}" alt="logo of {{customer.creditor}}">
             </div>
             <div class="pub-infos">
-                <h3>{{item.creditor}}</h3>
-                <p>Publiée par {{item.publisher}} le {{item.publishedDate | date: 'd MMM yy'}}</p>
+                <h3>{{customer.creditor}}</h3>
+                <p>Publiée par {{customer.publisher}} le {{customer.publishedDate | date: 'd MMM yy'}}</p>
             </div>
         </div>
 

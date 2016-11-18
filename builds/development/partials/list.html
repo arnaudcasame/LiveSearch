@@ -6,8 +6,8 @@
 
         <label class="formgroup"> By:
             <select ng-model='customerOrder'>
-                <option value="name">Name</option>
-                <option value="reknown">Reknown</option>
+                <option value="firstname">Nom</option>
+                <option value="creditor">Créancier</option>
             </select>
         </label>
         <label class="formgroup">
@@ -20,10 +20,10 @@
     <ul class="customerlist" ng-show="query">
         <li class="customer cf" ng-repeat='item in customers | filter:query | orderBy:customerOrder:direction'>
             <a href="#/details/{{customers.indexOf(item)}}">
-                <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+                <img ng-src="{{item.logo}}" alt="Photo of {{item.creditor}}">
                 <div class="info">
-                    <h2>{{item.name}}</h2>
-                    <h3>{{item.reknown}}</h3>
+                    <h2>{{item.firstname}}</h2>
+                    <h3>{{item.creditor}}</h3>
                 </div>
             </a>
         </li>
